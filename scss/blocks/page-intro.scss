@@ -1,0 +1,114 @@
+.page-intro {
+    padding: 60px 0 0;
+    p {
+        font-family: 'SFPro', sans-serif;
+        font-stretch: expanded;
+        margin: 0;
+        font-size: $fsz-sm;
+        text-align: center;
+        letter-spacing: -0.28px;
+        font-weight: 540;
+        opacity: 0.69;
+    }
+    .btn {
+        margin-top: 20px;
+    }
+    &__logo {
+        margin: 0 auto;
+        width: 128px;
+        height: 40px;
+    }
+    &__banner {
+        max-width: 670px;
+        margin: 0 auto;
+        position: relative;
+        z-index: 1;
+        img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+    }
+    &__sticker {
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        position: absolute;
+        &::before {
+            content: "";
+            display: block;
+            width: 122px;
+            height: 60px;
+            background-image: linear-gradient(125deg, #B07BFF -2.94%, #8533FF 61.67%);
+            border-radius: 50%;
+            transform: rotate(-12deg);
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        &::after {
+            content: "";
+            display: block;
+            width: 99px;
+            height: 35px;
+            border-radius: 50%;
+            background-color: #000;
+            filter: blur(11px);
+            position: absolute;
+            right: -1px;
+            bottom: -5px;
+            z-index: -1;
+        }
+        span {
+            width: 122px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 500;
+            font-size: 13px;
+            letter-spacing: -0.39px;
+            text-align: center;
+            transform: rotate(-12deg);
+        }
+    }
+    
+    @include media-breakpoint-up(md) {
+        letter-spacing: -0.538px;
+        p {
+            font-size: 1.25rem;
+        }
+        &__sticker {
+            transform: none;
+            right: -54px;
+            top: 210px;
+            &::before {
+                width: 180px;
+                height: 77px;
+            }
+            &::after {
+                width: 155px;
+                height: 55px;
+                filter: blur(16px);
+            }
+            span {
+                width: 180px;
+                height: 77px;
+                letter-spacing: -0.4px;
+                font-size: 1.125rem;
+                letter-spacing: -0.538px;
+                font-weight: normal;
+            }
+        }
+    }
+
+    @include media-breakpoint-up(lg) {
+        padding: 0 0 5.875rem;
+        .btn {
+            margin-top: 2.1875rem;
+        }
+        &__logo {
+            display: none;
+        }
+    }
+}

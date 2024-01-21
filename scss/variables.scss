@@ -1,0 +1,81 @@
+
+$fsz-base: 1rem; // 16px
+$fsz-sm: 0.875rem; // 14px
+$fsz-xs: 0.75rem; // 12px
+
+$font-family-base: 'SFProDisplay', sans-serif;
+
+$primary: #fff;
+$danger: #FF5B5B;
+$accent: #FF6D2E;
+
+$body-bg: #080808;
+$body-color: #FFFFFF;
+
+$spacers: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer * .75,
+  4: $spacer,
+  5: $spacer * 1.25,
+  6: $spacer * 2.5,
+  7: $spacer * 3,
+);
+
+// Grid containers
+//
+// Define the maximum width of `.container` for different screen sizes.
+
+// scss-docs-start container-max-widths
+$container-max-widths: (
+  sm: 540px,
+  md: 100%,
+  lg: 960px,
+  xl: 962px,
+  xxl: 60.25rem
+  // xxl: 964px
+);
+
+$grid-columns:                12;
+$grid-gutter-width:           12px;
+$container-padding-x:         24px;
+
+$theme-dark-bg: #000000;
+$theme-dark-color: #ffffff;
+
+$input-border-color: #090909;
+$input-background-color: #ffffff;
+$input-border-width: 1px;
+$input-padding-y: 1px;
+$input-padding-x: 4px;
+$input-line-height: 1.2;
+
+$input-placeholder-color:               rgba(255, 255, 255, 0.69);
+
+$btn-color: #000;
+$btn-padding-y: 0.75rem;
+$btn-padding-x: 1.575rem;
+$btn-font-size: $fsz-sm;
+$btn-font-family: $font-family-base;
+$btn-line-height: 1;
+$btn-font-weight: 590;
+$btn-border-width: 0;
+
+$btn-padding-y-lg: 1.15rem;
+$btn-padding-x-lg: 2.75rem;
+$btn-font-size-lg: 1.25rem;
+
+$btn-border-radius: 750px;
+$btn-border-radius-lg: 1000px;
+
+// Links
+
+$link-color:                              $accent;
+$link-decoration:                         none;
+$link-shade-percentage:                   0;
+$link-hover-color:                        $accent;
+$link-hover-decoration:                   underline;
+
+$form-select-border-width: $input-border-width;
+$form-select-border-color: $input-border-color;

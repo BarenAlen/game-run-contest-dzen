@@ -1,0 +1,32 @@
+.gift-box {
+    height: 13.75rem;
+    padding: 1.5rem;
+    display: flex;
+    align-items: flex-start;
+    flex-grow: 1;
+    background-color: #161617;
+    border-radius: 16px;
+    background-repeat: no-repeat;
+    transition: background-color 250ms;
+    background-size: contain;
+    &:hover {
+        background-color: $accent;
+    }
+    &--bg-tshirt {
+        background-image: url('static/images/gift-tshirt.webp');
+        background-position: right 0 bottom 0;
+    }
+    &--bg-bag {
+        background-image: url('static/images/gift-bag.webp');
+        background-position: right 0 bottom 0;
+    }
+    &--bg-hoodie {
+        background-image: url('static/images/gift-hoodie.webp');
+        background-position: right 0 bottom 0;
+    }
+    &__text {
+    }
+    @include media-breakpoint-up(lg) {
+        border-radius: 30px;
+    }
+}

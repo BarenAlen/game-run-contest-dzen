@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        iframe {
+            display: block;
+            margin: 120px auto 0;
+            width: 1024px;
+            height: 600px;
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+    <iframe id="game-run-iframe" src="https://zen.alef.dev/" frameborder="0"></iframe>
+</body>
+
+<script>
+    document.addEventListener('DOMContentLoaded', async () => {
+        let gameRunWindow = document.getElementById('game-run-iframe').contentWindow;
+
+        gameRunWindow.postMessage(hash.slice(1), "*");
+    })
+
+</script>
+</html>

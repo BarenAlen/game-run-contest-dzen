@@ -1,0 +1,309 @@
+.spoiler-wrapper {
+    position: relative;
+    @include media-breakpoint-down(lg){
+        .line-remover{
+            position: absolute;
+            bottom: -5px;
+            right: 0;
+            left: calc(100% - 52px);
+            height: 8px;
+            background: $body-bg;
+            z-index: 2;
+            border-radius: 50px;
+            &::after{
+                content: "";
+                position: absolute;
+                background: $body-bg;
+                bottom: 3px;
+                right: 38px;
+                height: 5px;
+                width: 19px;
+                transform: rotate(-20deg);
+            }
+        }
+    }
+    margin-bottom: 12px;
+}
+.stage-spoiler {
+    padding: 0.625rem 1.375rem 0.85rem;
+    color: #000;
+    // border-radius: 1.25rem;
+    border-radius: 16px 16px 0 16px;
+    position: relative;
+    overflow: hidden;
+    padding-left: 70px;
+    &:not(:last-child) {
+        margin-bottom: 0.75rem;
+    }
+    &::after {
+        content: '';
+        display: block;
+        background-color: #080808;
+        // border-radius: 1.25rem;
+        border-radius: 16px 0 0 0;
+        position: absolute;
+        width: 88px;
+        right: -44px;
+        top: 37px;
+        bottom: -5px;
+        z-index: 1;
+        border-bottom: 15px solid $body-bg;
+    }
+    &::before {
+        content: '';
+        display: block;
+        width: 56px;
+        height: 37px;
+        // border-radius: 1.25rem;
+        border-radius: 0 0 16px 0;
+        background-color: transparent;
+        box-shadow: 28px 12px 2px 1px #080808;
+        position: absolute;
+        right: 1px;
+        top: 0;
+        z-index: 1;
+    }
+    &__head {
+        padding-right: 50px;
+        position: relative;
+        cursor: pointer;
+    }
+    &__spacer {
+        @include media-breakpoint-down(lg) {
+            min-height: 35px;
+        }
+    }
+    &__title {
+        letter-spacing: -0.54px;
+        font-family: 'SFPro', sans-serif;
+        font-stretch: expanded;
+        font-feature-settings: 'dlig' on;
+        font-weight: 600;
+        margin-right: -60px;
+        margin-bottom: 0.25rem;
+        font-size: 1.125rem;
+        line-height: 1;
+        span {
+            padding: 0.1875rem 0.5rem;
+            margin-left: 0.625rem;
+            display: inline-block;
+            border-radius: 1.875rem;
+            background-color: #fff;
+        }
+    }
+    &__body {
+        height: 0;
+        overflow: hidden;
+        transition: all 250ms ease;
+        &::after {
+            content: '';
+            display: block;
+            width: 44px;
+            height: 44px;
+            border-radius: 0 0 16px 0;
+            background-color: transparent;
+            box-shadow: 22px 12px 2px 1px #080808;
+            position: absolute;
+            bottom: 0px;
+            right: 43px;
+            z-index: 1;
+        }
+    }
+    &__body-inner {
+        padding-top: 0.75rem;
+        padding-right: 50px;
+        max-width: 31.25rem;
+    }
+    &__toggler {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 34px;
+        height: 34px;
+        border: 0;
+        border-radius: 50%;
+        background-color: #fff;
+        position: absolute;
+        right: 0;
+        top: 47px;
+        z-index: 2;
+        padding: 7px;
+        svg {
+            width: 100%;
+            height: 100%;
+            transition: transform 250ms ease;
+            display: block;
+        }
+    }
+    &.is-open {
+        .stage-spoiler__body {
+            height: auto;
+        }
+        .stage-spoiler__toggler {
+            svg {
+                transform: rotate(-180deg);
+            }
+        }
+    }
+    &--legend {
+        background: url("/static/images/star-legend.webp") no-repeat;
+        background-position: -60px -20px;
+        background-size: 200px;
+        @include media-breakpoint-down(lg)  {
+            background-size: 120px;
+            background-position: -30px -15px;
+        }
+        .stage-spoiler__body {
+            &::before {
+                content: "";
+                display: block;
+                position: absolute;
+                height: 100px;
+                z-index: -1;
+                left: 0;
+                top: 0;
+                right: 0;
+                -webkit-backface-visibility: hidden;
+                backface-visibility: hidden;
+                // transform: translate(-50%, 22%) rotate(-2deg) scale(2, 300);
+                transform: translate(-90%, -70%) rotate(-2deg) scale(3, 300);
+                background: 
+                linear-gradient(to bottom right, #FFF 0%, #CEF6FF 25%, #FFE0CE 30%, #F8D0FF 40%, #8C8AFF 50%) bottom right / 50% 50% no-repeat, 
+                linear-gradient(to bottom left, #FFF 0.1%, #CEF6FF 25.1%, #FFE0CE 30.1%, #F8D0FF 40.1%, #8C8AFF 50.1%) bottom left / 50.1% 50.1% no-repeat, 
+                linear-gradient(to top left, #FFF 0%, #CEF6FF 25%, #FFE0CE 30%, #F8D0FF 40%, #8C8AFF 50%) top left / 50% 50% no-repeat, 
+                linear-gradient(to top right, #FFF 0.1%, #CEF6FF 25.1%, #FFE0CE 30.1%, #F8D0FF 40.1%, #8C8AFF 50.1%) top right / 50.1% 50.1% no-repeat;
+            }
+        }
+    }
+    &--master {
+        .stage-spoiler__body::before{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url("/static/images/star-master.webp") no-repeat;
+            background-position: -60px -20px;
+            background-size: 200px;
+            @include media-breakpoint-down(lg)  {
+                background-size: 120px;
+                background-position: -30px -15px;
+            }
+        
+        }
+        background: linear-gradient(270deg, #8A6B26 0%, #EED27F 18.83%, #D7B974 43.97%, #F2E399 62.64%, #C4A159 87.99%, #98772E 104.59%);
+    }
+    &--expert {
+        .stage-spoiler__body::before{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url("/static/images/star-expert.webp") no-repeat;
+            background-position: -60px -20px;
+            background-size: 200px;
+            @include media-breakpoint-down(lg)  {
+                background-size: 120px;
+                background-position: -30px -15px;
+            }
+        }
+        background: linear-gradient(270deg, #DBDBDB 0%, #969696 29.33%, #DCDCDC 55.34%, #929292 81.9%, #969696 106.25%);
+    }
+    &--student {
+        .stage-spoiler__body::before{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url("/static/images/star-student.webp") no-repeat;
+            background-position: -60px -20px;
+            background-size: 200px;
+            @include media-breakpoint-down(lg)  {
+                background-size: 120px;
+                background-position: -30px -15px;
+            }
+        }
+        background: linear-gradient(90deg, #FFA88A 19.05%, #FF5317 118.25%);
+    }
+    &--newbie {
+        .stage-spoiler__body::before{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url("/static/images/star-newbie.webp") no-repeat;
+            background-position: -60px -20px;
+            background-size: 200px;
+            @include media-breakpoint-down(lg)  {
+                background-size: 120px;
+                background-position: -30px -15px;
+            }
+        }
+        background: linear-gradient(276deg, #A7CCA4 -3.56%, #C4EDC1 94.96%);
+        .stage-spoiler__body-inner {
+            max-width: 390px;
+        }
+    }
+    @include media-breakpoint-up(lg) {
+        padding: 1.375rem;
+        padding-top: 22px;
+        padding-bottom: 22px;
+        padding-left: 100px;
+        border-radius: 20px 20px 0 20px;
+        &::after {
+            width: 112px;
+            right: -57px;
+            top: 48px;
+            border-radius: 20px 0 0 0;
+        }
+        &::before {
+            height: 48px;
+            border-radius: 20px;
+        }
+        &__body {
+            &::after {
+                width: 56px;
+                height: 56px;
+                right: 55px;
+                border-radius: 0 0 20px 0;
+            }
+        }
+        &__title {
+            margin-bottom: 0.75rem;
+            font-size: 1.75rem;
+            line-height: 1.1;
+        }
+        &__toggler {
+            width: 47px;
+            height: 47px;
+            top: 57px;
+            padding: 10px;
+            svg {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        &__body-inner {
+            padding-top: 1.25rem;
+        }
+        &--master {
+            width: calc(100% - 100px);
+        }
+        &--expert {
+            width: calc(100% - 200px);
+        }
+        &--student {
+            width: calc(100% - 300px);
+        }
+        &--newbie {
+            width: calc(100% - 400px);
+        }
+    }
+}

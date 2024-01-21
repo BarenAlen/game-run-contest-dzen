@@ -1,0 +1,686 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" type="image/svg+xml" href="/vite.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Дзен Game Run</title>
+	</head>
+	<body>
+		<!-- Top.Mail.Ru counter -->
+		<script type="text/javascript">
+			var _tmr = window._tmr || (window._tmr = []);
+			_tmr.push({ id: "3398841", type: "pageView", start: (new Date()).getTime() });
+			(function (d, w, id) {
+				if (d.getElementById(id)) return;
+				var ts = d.createElement("script"); ts.type = "text/javascript"; ts.async = true; ts.id = id;
+				ts.src = "https://top-fwz1.mail.ru/js/code.js";
+				var f = function () { var s = d.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ts, s); };
+				if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); }
+			})(document, window, "tmr-code");
+		</script>
+		<noscript><div><img src="https://top-fwz1.mail.ru/counter?id=3398841;js=na" style="position:absolute;left:-9999px;" alt="Top.Mail.Ru" /></div></noscript>		
+		<!-- /Top.Mail.Ru counter -->
+		<!-- Yandex.Metrika counter -->
+		<script type="text/javascript" >
+			(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+			m[i].l=1*new Date();
+			for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+			k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+			(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+			ym(51446871, "init", {
+					clickmap:true,
+					trackLinks:true,
+					accurateTrackBounce:true
+			});
+		</script>
+		<noscript><div><img src="https://mc.yandex.ru/watch/51446871" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+		<!-- /Yandex.Metrika counter -->
+		<div class="page-wrap">
+			<header class="page-header" id="page-header">
+				<div class="page-header__container">
+					<nav class="main-nav">
+						<a href="/" class="main-nav__logo">
+							<svg viewBox="0 0 129 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<g clip-path="url(#a)" fill="#F5F5F5">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M18.897 0c-.098 7.897-.637 12.336-3.6 15.298-2.961 2.962-7.4 3.5-15.297 3.599v1.167c7.897.098 12.336.637 15.298 3.6 2.962 2.961 3.5 7.4 3.599 15.297h1.167c.098-7.897.637-12.336 3.6-15.298 2.961-2.962 7.4-3.5 15.297-3.599v-1.167c-7.897-.098-12.336-.637-15.298-3.6-2.962-2.961-3.5-7.4-3.599-15.297h-1.167Z"/>
+									<path d="M51.675 38.117h-4.402v-9.312h1.83c.624-1.039 1.079-2.532 1.364-4.48.286-1.974.481-4.572.585-7.793l.39-11.142h15.896v23.415h2.532v9.312h-4.403v-5.65H51.675v5.65Zm3.819-20.961c-.104 3.22-.312 5.74-.624 7.558-.286 1.793-.623 3.156-1.013 4.091h8.766V9.052h-6.857l-.273 8.104ZM77.392 29.195c1.09 0 1.909-.221 2.454-.663.572-.467.857-1.09.857-1.87 0-.883-.26-1.506-.779-1.87-.493-.39-1.338-.584-2.532-.584h-2.728v-3.429h2.728c1.896 0 2.844-.792 2.844-2.376 0-.728-.26-1.286-.78-1.676-.493-.39-1.168-.584-2.025-.584-1.273 0-2.351.195-3.234.584-.883.364-1.637.753-2.26 1.17v-3.78c.572-.364 1.364-.727 2.377-1.091 1.013-.364 2.272-.546 3.779-.546 2.104 0 3.766.442 4.987 1.325 1.22.883 1.831 2.156 1.831 3.818 0 1.091-.273 2.052-.818 2.883-.546.806-1.416 1.403-2.61 1.793 1.298.285 2.285.805 2.96 1.558.702.753 1.053 1.701 1.053 2.844 0 1.974-.65 3.494-1.948 4.559-1.273 1.065-3.143 1.597-5.61 1.597-1.663 0-3.053-.182-4.17-.545-1.117-.39-1.896-.766-2.337-1.13v-3.78c.623.468 1.467.884 2.532 1.247 1.091.364 2.234.546 3.429.546ZM102.959 31.143c-.675.467-1.558.87-2.649 1.208-1.091.337-2.377.506-3.857.506-2.961 0-5.247-.831-6.858-2.493-1.61-1.689-2.415-4.234-2.415-7.637 0-1.974.299-3.727.896-5.26.623-1.558 1.545-2.779 2.766-3.662 1.247-.883 2.805-1.325 4.675-1.325 1.559 0 2.91.312 4.053.936 1.142.623 2.025 1.623 2.649 3 .623 1.35.935 3.168.935 5.454v2.455H91.972c.104 1.636.52 2.857 1.247 3.662.727.805 1.935 1.208 3.623 1.208 1.143 0 2.26-.182 3.351-.546 1.117-.363 2.039-.792 2.766-1.285v3.779Zm-7.52-15c-2.181 0-3.337 1.584-3.467 4.753h6.468v-.39c0-1.22-.221-2.246-.663-3.077-.415-.858-1.195-1.286-2.337-1.286ZM117.091 12.87h4.637v19.598h-4.637v-8.182h-6.195v8.181h-4.636V12.87h4.636v7.753h6.195V12.87Z"/>
+								</g>
+								<defs>
+									<clipPath id="a">
+									<path fill="#fff" d="M0 0h125v38.961H0z"/>
+									</clipPath>
+								</defs>
+							</svg>
+						</a>
+						<ul class="main-nav__nav">
+							<li>
+								<a class="main-nav__link" href="#section-results">Таблица лидеров</a>
+							</li>
+							<li>
+								<a class="main-nav__link" href="#section-rules">Как принять участие</a>
+							</li>
+							<li>
+								<a class="main-nav__link" href="#section-stages">Уровни и призы</a>
+							</li>
+							<li>
+								<!-- <a class="main-nav__btn btn btn-primary" id="join-form-btn" href="#join-form">Участвовать</a> -->
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</header>
+			<div class="page-content">
+				<div class="page-intro" id="page-intro">
+					<div class="container">
+						<div class="page-intro__logo">
+							<svg viewBox="0 0 129 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<g clip-path="url(#a)" fill="#F5F5F5">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M18.897 0c-.098 7.897-.637 12.336-3.6 15.298-2.961 2.962-7.4 3.5-15.297 3.599v1.167c7.897.098 12.336.637 15.298 3.6 2.962 2.961 3.5 7.4 3.599 15.297h1.167c.098-7.897.637-12.336 3.6-15.298 2.961-2.962 7.4-3.5 15.297-3.599v-1.167c-7.897-.098-12.336-.637-15.298-3.6-2.962-2.961-3.5-7.4-3.599-15.297h-1.167Z"/>
+									<path d="M51.675 38.117h-4.402v-9.312h1.83c.624-1.039 1.079-2.532 1.364-4.48.286-1.974.481-4.572.585-7.793l.39-11.142h15.896v23.415h2.532v9.312h-4.403v-5.65H51.675v5.65Zm3.819-20.961c-.104 3.22-.312 5.74-.624 7.558-.286 1.793-.623 3.156-1.013 4.091h8.766V9.052h-6.857l-.273 8.104ZM77.392 29.195c1.09 0 1.909-.221 2.454-.663.572-.467.857-1.09.857-1.87 0-.883-.26-1.506-.779-1.87-.493-.39-1.338-.584-2.532-.584h-2.728v-3.429h2.728c1.896 0 2.844-.792 2.844-2.376 0-.728-.26-1.286-.78-1.676-.493-.39-1.168-.584-2.025-.584-1.273 0-2.351.195-3.234.584-.883.364-1.637.753-2.26 1.17v-3.78c.572-.364 1.364-.727 2.377-1.091 1.013-.364 2.272-.546 3.779-.546 2.104 0 3.766.442 4.987 1.325 1.22.883 1.831 2.156 1.831 3.818 0 1.091-.273 2.052-.818 2.883-.546.806-1.416 1.403-2.61 1.793 1.298.285 2.285.805 2.96 1.558.702.753 1.053 1.701 1.053 2.844 0 1.974-.65 3.494-1.948 4.559-1.273 1.065-3.143 1.597-5.61 1.597-1.663 0-3.053-.182-4.17-.545-1.117-.39-1.896-.766-2.337-1.13v-3.78c.623.468 1.467.884 2.532 1.247 1.091.364 2.234.546 3.429.546ZM102.959 31.143c-.675.467-1.558.87-2.649 1.208-1.091.337-2.377.506-3.857.506-2.961 0-5.247-.831-6.858-2.493-1.61-1.689-2.415-4.234-2.415-7.637 0-1.974.299-3.727.896-5.26.623-1.558 1.545-2.779 2.766-3.662 1.247-.883 2.805-1.325 4.675-1.325 1.559 0 2.91.312 4.053.936 1.142.623 2.025 1.623 2.649 3 .623 1.35.935 3.168.935 5.454v2.455H91.972c.104 1.636.52 2.857 1.247 3.662.727.805 1.935 1.208 3.623 1.208 1.143 0 2.26-.182 3.351-.546 1.117-.363 2.039-.792 2.766-1.285v3.779Zm-7.52-15c-2.181 0-3.337 1.584-3.467 4.753h6.468v-.39c0-1.22-.221-2.246-.663-3.077-.415-.858-1.195-1.286-2.337-1.286ZM117.091 12.87h4.637v19.598h-4.637v-8.182h-6.195v8.181h-4.636V12.87h4.636v7.753h6.195V12.87Z"/>
+								</g>
+								<defs>
+									<clipPath id="a">
+									<path fill="#fff" d="M0 0h125v38.961H0z"/>
+									</clipPath>
+								</defs>
+							</svg>
+						</div>
+						<div class="page-intro__banner">
+							<img src="static/images/logo-game.webp" width="669" alt="">
+							<div class="page-intro__sticker">
+								<span>призовой фонд 1&nbsp;000&nbsp;000&nbsp;₽</span>
+							</div>
+						</div>
+						<p>Стань легендой игрового контента</p>
+						<div class="text-center">
+							<!-- <a class="btn btn-lg btn-primary" id="join-form-btn-2" href="#join-form">Участвовать</a> -->
+						</div>
+					</div>
+				</div>
+
+				<section class="section-rules" id="section-rules">
+					<div class="container">
+						<h1 class="section-title section-title--only">Прими участие в контентном соревновании от Дзена для игровых блогеров!</h1>
+						<div class="row">
+							<div class="col-md-8">
+								<div class="box mb-3">
+									<h3>Участвуй в гонке за просмотры</h3>
+									<p>Публикуй на своем канале в Дзене летсплеи, записи стримов, экспертные статьи, обзоры любимых игр или составляй рейтинги новинок игровой индустрии. Главное — чтобы контент соответствовал <a href="#section-requirements">требованиям</a></p>
+								</div>
+							</div>
+							<div class="col-md-4 order-1 order-md-0">
+								<div class="box mb-3">
+									<h3>21 октября</h3>
+									<p>Мы завершим гонку и узнаем, кто смог стать легендой игрового контента в Дзене!</p>
+								</div>
+							</div>
+							<div class="col-12">
+								<div class="box box--coins-bg mb-3">
+									<h3>1 000 000 рублей</h3>
+									<p>Призовой фонд распределяется между победителями в конце соревнования</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section id="section-results">
+					<div class="container">
+						<h2 class="section-title">Таблица лидеров</h2>
+						<p class="text-center">Здесь ты можешь отследить свой прогресс</p>
+						<div class="scrollable results-board">
+							<div id="results-board__empty-text" class="results-board__empty-text" hidden>
+								<p class="text-mute">Скоро здесь появится таблица с участниками</p>
+								<div class="results-board__sceleton">
+									<div class="row">
+										<div class="col-16"></div>
+									</div>
+									<div class="row">
+										<div class="col-4"></div>
+										<div class="col-12"></div>
+									</div>
+									<div class="row">
+										<div class="col-4"></div>
+										<div class="col-12"></div>
+									</div>
+									<div class="row">
+										<div class="col-4"></div>
+										<div class="col-12"></div>
+									</div>
+								</div>
+							</div>
+							<div>
+								<div class="results-board__search">
+									<button type="button" id="results-search-submit">
+										<svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M14.167 8.75a5.417 5.417 0 1 0-10.834 0 5.417 5.417 0 0 0 10.834 0Zm-1.032 5.563a7.083 7.083 0 1 1 1.178-1.178l.026.026 2.917 2.916a.834.834 0 0 1-1.178 1.18L13.16 14.34l-.026-.027Z" fill="#fff" fill-opacity=".48"/>
+										  </svg>
+									</button>
+									<input type="search" id="results-search" placeholder="Введите название канала">
+									<ul class="results-board__search-suggestions" id="results-search-suggestions">
+										<!-- <li>
+											<button type="button">Блог Эльфийки</button>
+										</li>
+										<li>
+											<button type="button">Блог Эльфийки</button>
+										</li> -->
+									</ul>
+								</div>
+								<div class="results-board__active-filters" id="results-active-filter-container">
+									<!-- <div class="level-label level-label--legend">
+										Легенда
+										<span></span>
+									</div> -->
+								</div>
+								<div class="table_wrapper">
+									<table class="results-board__table">
+										<thead>
+											<tr>
+												<th><span class="results-board__sm-replace position">Позиция</span></th>
+												<th><span>Уровень</span></th>
+												<th><span>Название канала</span></th>
+												<th><span class="results-board__sm-replace views">Просмотры</span></th>
+											</tr>
+										</thead>
+										<tbody id="results-container">
+											<!-- <tr>
+												<td>1.</td>
+												<td>
+													<button type="button" class="level-label level-label--legend">Легенда</button>
+												</td>
+												<td>Самое длинное название в Дзене</td>
+												<td>300 000</td>
+											</tr>
+											<tr>
+												<td>2.</td>
+												<td>
+													<button type="button" class="level-label level-label--master">Мастер</button>
+												</td>
+												<td>Компот</td>
+												<td>300 000</td>
+											</tr>
+											<tr>
+												<td>3.</td>
+												<td>
+													<button type="button" class="level-label level-label--expert">Эксперт</button>
+												</td>
+												<td>Лимонад</td>
+												<td>30 000</td>
+											</tr>
+											<tr>
+												<td>4.</td>
+												<td>
+													<button type="button" class="level-label level-label--student">Ученик</button>
+												</td>
+												<td>Компот</td>
+												<td>300 000</td>
+											</tr>
+											<tr>
+												<td>5.</td>
+												<td>
+													<button type="button" class="level-label level-label--newbie">Новичок</button>
+												</td>
+												<td>Компот</td>
+												<td>300</td>
+											</tr> -->
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="section-stages" id="section-stages">
+					<div class="container">
+						<h1 class="section-title">Уровни и призы</h1>
+						<p class="text-center text-base">Достигай поставленных целей в погоне за максимальными призами.<br aria-hidden="true">Помни: чем больше просмотров, тем выше уровень и круче призы!</p>
+						<div class="spoiler-wrapper">
+							<div class="line-remover"></div>
+							<div class="stage-spoiler stage-spoiler--legend js-spoiler">
+								<button type="button" class="stage-spoiler__toggler" data-spoiler-toggler>
+									<svg preserveAspectRatio="none" viewbox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M6.983 15.517a1.125 1.125 0 0 0-1.591 1.591l7.305 7.306.018.017a1.12 1.12 0 0 0 1.57 0l.018-.017 7.305-7.306a1.125 1.125 0 0 0-1.591-1.59l-5.392 5.391V3.375a1.125 1.125 0 0 0-2.25 0v17.534l-5.392-5.392Z" fill="#000"/>
+										</svg>
+								</button>
+								<div class="stage-spoiler__head" data-spoiler-head>
+									<h2 class="stage-spoiler__title">Легенда<span>450 000 ₽</span></h2>
+									<div class="stage-spoiler__spacer">
+										<p class="text-base">Цель: 300 000 просмотров за время проведения соревнования</p>
+									</div>
+								</div>
+		
+								<div class="stage-spoiler__body" data-spoiler-body>
+									<div class="stage-spoiler__body-inner text-base">
+										<p class="fw-bold mb-0">Призовой фонд: 450 000 рублей</p>
+										<ul class="list-style-none my-1">
+											<li>1 место — 200 000 рублей</li>
+											<li>2 место — 150 000 рублей</li>
+											<li>3 место — 100 000 рублей</li>
+										</ul>
+										<p class="fw-bold mb-0">Приятный бонус:</p>
+										<ul class="list-style-dash mb-0">
+											<li>уютная толстовка Дзена и стильный чехол для ноутбука</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="spoiler-wrapper">
+							<div class="line-remover"></div>
+							<div class="stage-spoiler stage-spoiler--master js-spoiler">
+								<button type="button" class="stage-spoiler__toggler" data-spoiler-toggler>
+									<svg preserveAspectRatio="none" viewbox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M6.983 15.517a1.125 1.125 0 0 0-1.591 1.591l7.305 7.306.018.017a1.12 1.12 0 0 0 1.57 0l.018-.017 7.305-7.306a1.125 1.125 0 0 0-1.591-1.59l-5.392 5.391V3.375a1.125 1.125 0 0 0-2.25 0v17.534l-5.392-5.392Z" fill="#000"/>
+										</svg>
+								</button>
+								<div class="stage-spoiler__head" data-spoiler-head>
+									<h2 class="stage-spoiler__title">Мастер<span>325 000 ₽</span></h2>
+									<div class="stage-spoiler__spacer">
+										<p class="text-base">Цель: 150 000 просмотров за время проведения соревнования</p>
+									</div>
+								</div>
+		
+								<div class="stage-spoiler__body" data-spoiler-body>
+									<div class="stage-spoiler__body-inner text-base">
+										<p class="fw-bold mb-0">Призовой фонд: 325 000 рублей</p>
+										<ul class="list-style-none my-1">
+											<li>1 место — 150 000 рублей</li>
+											<li>2 место — 100 000 рублей</li>
+											<li>3 место — 75 000 рублей</li>
+										</ul>
+										<p class="fw-bold mb-0">Приятные бонусы:</p>
+										<ul class="list-style-dash mb-0">
+											<li>стильная бутылка Дзена</li>
+											<li>консультация по развитию канала с лидом игрового направления Дзена — Ярославом Вершининым</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="spoiler-wrapper">
+							<div class="line-remover"></div>
+							<div class="stage-spoiler stage-spoiler--expert js-spoiler">
+								<button type="button" class="stage-spoiler__toggler" data-spoiler-toggler>
+									<svg preserveAspectRatio="none" viewbox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M6.983 15.517a1.125 1.125 0 0 0-1.591 1.591l7.305 7.306.018.017a1.12 1.12 0 0 0 1.57 0l.018-.017 7.305-7.306a1.125 1.125 0 0 0-1.591-1.59l-5.392 5.391V3.375a1.125 1.125 0 0 0-2.25 0v17.534l-5.392-5.392Z" fill="#000"/>
+										</svg>
+								</button>
+								<div class="stage-spoiler__head" data-spoiler-head>
+									<h2 class="stage-spoiler__title">Эксперт<span>150 000 ₽</span></h2>
+									<div class="stage-spoiler__spacer">
+										<p class="text-base">Цель: 100 000 просмотров за время проведения соревнования</p>
+									</div>
+								</div>
+		
+								<div class="stage-spoiler__body" data-spoiler-body>
+									<div class="stage-spoiler__body-inner text-base">
+										<p class="fw-bold mb-0">Призовой фонд: 150 000 рублей</p>
+										<ul class="list-style-none my-1">
+											<li>1 место — 60 000 рублей</li>
+											<li>2 место — 50 000 рублей</li>
+											<li>3 место — 40 000 рублей</li>
+										</ul>
+										<p class="fw-bold mb-0">Приятные бонусы:</p>
+										<ul class="list-style-dash mb-0">
+											<li>уютная футболка Дзена и стильный стикерпак</li>
+											<li>консультация по развитию канала с тематическим менеджером</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="spoiler-wrapper">
+							<div class="line-remover"></div>
+							<div class="stage-spoiler stage-spoiler--student js-spoiler">
+								<button type="button" class="stage-spoiler__toggler" data-spoiler-toggler>
+									<svg preserveAspectRatio="none" viewbox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M6.983 15.517a1.125 1.125 0 0 0-1.591 1.591l7.305 7.306.018.017a1.12 1.12 0 0 0 1.57 0l.018-.017 7.305-7.306a1.125 1.125 0 0 0-1.591-1.59l-5.392 5.391V3.375a1.125 1.125 0 0 0-2.25 0v17.534l-5.392-5.392Z" fill="#000"/>
+										</svg>
+								</button>
+								<div class="stage-spoiler__head" data-spoiler-head>
+									<h2 class="stage-spoiler__title">Ученик<span>75 000 ₽</span></h2>
+									<div class="stage-spoiler__spacer">
+										<p class="text-base">Цель: 50 000 просмотров за время проведения соревнования</p>
+									</div>
+								</div>
+		
+								<div class="stage-spoiler__body" data-spoiler-body>
+									<div class="stage-spoiler__body-inner text-base">
+										<p class="fw-bold mb-0">Призовой фонд: 75 000 рублей</p>
+										<ul class="list-style-none my-1">
+											<li>1 место — 30 000 рублей</li>
+											<li>2 место — 25 000 рублей</li>
+											<li>3 место — 20 000 рублей</li>
+										</ul>
+										<p class="fw-bold mb-0">Приятные бонусы:</p>
+										<ul class="list-style-dash mb-0">
+											<li>продвинутый анализ канала от тематического менеджера</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="spoiler-wrapper">
+							<div class="line-remover"></div>
+							<div class="stage-spoiler stage-spoiler--newbie js-spoiler">
+							<button type="button" class="stage-spoiler__toggler" data-spoiler-toggler>
+								<svg preserveAspectRatio="none" viewbox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M6.983 15.517a1.125 1.125 0 0 0-1.591 1.591l7.305 7.306.018.017a1.12 1.12 0 0 0 1.57 0l.018-.017 7.305-7.306a1.125 1.125 0 0 0-1.591-1.59l-5.392 5.391V3.375a1.125 1.125 0 0 0-2.25 0v17.534l-5.392-5.392Z" fill="#000"/>
+								  </svg>
+							</button>
+							<div class="stage-spoiler__head" data-spoiler-head>
+								<h2 class="stage-spoiler__title">Новичок<span>мерч Дзена</span></h2>
+								<div class="stage-spoiler__spacer">
+									<p class="text-base">Цель: регистрация в соревновании GAMERUN</p>
+								</div>
+							</div>
+	
+							<div class="stage-spoiler__body" data-spoiler-body>
+								<div class="stage-spoiler__body-inner text-base">
+									<p class="fw-bold mb-1">Призовой фонд: 10 футболок Дзена</p>
+									<p>В конце соревнования мы подарим по стильной футболке Дзена 10 участникам, набравшим наибольшее количество просмотров на уровне «Новичок»</p>
+								</div>
+							</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="section-rules" id="section-rules">
+					<div class="container">
+						<h2 class="section-title section-title--only">Как принять участие</h2>
+						<div class="row">
+							<div class="col-12">
+								<div class="box box--gamepad-bg mb-3">
+									<div class="box__note">
+										<div class="box__num">1</div>
+										<div>Если у тебя уже есть канал — смело пропускай этот пункт</div>
+									</div>
+									<h3>Создать канал в Дзене</h3>
+									<p class="mb-5">Чтобы создать канал в Дзене, <br class="d-md-none" aria-hidden="true">используй свой VK ID или Yandex ID </p>
+									<a href="https://dzen.ru/profile/editor/create" target="_blank" class="btn btn-primary" id="click_create_channel">Создать канал</a>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="box mb-3">
+									<div class="box__note">
+										<div class="box__num">2</div>
+									</div>
+									<h3>Заполнить форму<br aria-hidden="true">участника</h3>
+									<p>Обязательно заполни форму ниже и укажи необходимую информацию в каждом пункте. Это нужно для того, чтобы мы могли отслеживать твой прогресс, а также для вручения призов в случае твоей победы</p>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="box mb-3">
+									<div class="box__note">
+										<div class="box__num">3</div>
+									</div>
+									<h3>Выкладывать контент на игровую тематику</h3>
+									<p>Публикуй на своем канале в Дзене летсплеи, записи стримов, экспертные статьи, обзоры любимых игр или составляй рейтинги новинок игровой индустрии. Главное — чтобы контент соответствовал <a href="#section-requirements">требованиям</a></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="section-form" id="join-form">
+					<div class="container">
+						<h2 class="section-title section-title--only">Форма участника</h2>
+						<div class="signup-form">
+							<div class="signup-msg" id="signup-msg" style="display: none;">
+								<img class="mb-5" src="static/images/signup-msg-fire.webp" width="253" alt="">
+								<p class="mb-0 text-base text-mute">Гонка началась!</p>
+								<p class="text-base mb-5 text-mute">Ждем твои публикации в Дзене и желаем удачи!</p>
+								<a href="https://dzen.ru/" target="_blank" class="btn btn-primary">Перейти в Дзен?</a>
+							</div>
+							<form id="signup-form">
+								<div class="form-item">
+									<input type="email" name="signup-email" id="signup-email" class="form-control" placeholder="Email*">
+								</div>
+								<div class="form-item">
+									<input type="text" name="signup-tg" id="signup-tg" class="form-control" placeholder="Логин в Telegram*">
+								</div>
+								<div class="form-item">
+									<input type="text" name="signup-zen" id="signup-zen" class="form-control" placeholder="Cсылка на твой канал в Дзене*">
+									<div class="form-item__error">Неккоректная ссылка. Напишите в формате: https://dzen.ru/gamers</div>
+								</div>
+								<div class="form-item">
+									<input type="text" name="signup-inviter-zen" id="signup-inviter-zen" class="form-control" placeholder="Ссылка на канал автора в Дзене, который тебя пригласил">
+									<div class="form-item__error">Неккоректная ссылка. Напишите в формате: https://dzen.ru/gamers</div>
+								</div>
+								<div class="signup-form__footer">
+									<div class="row flex-column flex-md-row align-items-center justify-content-between">
+										<div class="col-10 col-md-9 order-1 order-md-0">
+											<div class="signup-form__text">Нажимая «Отправить», я даю согласие на обработку данных и принимаю <a href="/assets/rules_GAMERUN_.pdf" target="_blank">правила</a> конкурса</div>
+										</div>
+										<div class="col-auto text-center">
+											<button type="submit" class="btn btn-primary">Отправить</button>
+										</div>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</section>
+
+				<section class="section-form" id="section-requirements">
+					<div class="container">
+						<h2 class="section-title section-title--only">Требования к контенту</h2>
+					</div>
+					<div class="container rules-swiper-container">
+						<div class="swiper rules-swiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide rule-box box--rule-visual">
+									<div class="box">
+										<img src="static/images/rules-smiley.webp" alt="">
+										<h3>Визуальное качество</h3>
+										<p>Делаешь видео или вставляешь картинки в публикацию? Не забывай: чем приятнее смотрится материал, тем больше шанс попасть в рекомендации. А это напрямую повлияет на твое количество просмотров!</p>
+									</div>
+								</div>
+								<div class="swiper-slide rule-box box--rule-sound">
+									<div class="box">
+										<img src="static/images/rules-sound.webp" alt="">
+										<h3>Качество звука</h3>
+										<p>Если используешь формат видео, то не забудь про грамотный баланс звука и музыкальное сопровождение — вдруг кому-то зайдет настолько, что он поставит на повтор или скинет ссылку друзьям!</p>
+									</div>
+								</div>
+								<div class="swiper-slide rule-box box--rule-theme">
+									<div class="box">
+										<img src="static/images/rules-check.webp" alt="">
+										<h3>Соответствие игровой тематике</h3>
+										<p>Эта гонка только для авторов, создающих геймерский контент. Так что ждем твои эпичные нарезки со стримов, экспертные обзоры игровых новинок, летсплеи, фото- и видеоотчеты с игровых мероприятий или конференций или любые другие публикации на игровую тематику</p>
+									</div>
+								</div>
+								<div class="swiper-slide rule-box box--rule-grammar">
+									<div class="box">
+										<img src="static/images/rules-grammar.webp" alt="">
+										<h3>Грамотность</h3>
+										<p>Грамотная речь и качественно написанные и оформленные тексты гораздо лучше зайдут аудитории, чем что-то написанное на скорую руку</p>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-button-prev rules-swiper__button-prev">
+								<svg width="40" height="40" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M13.822 30.488a1.667 1.667 0 1 0 2.357 2.357l11.077-11.077a2.5 2.5 0 0 0 0-3.536L16.18 7.155a1.667 1.667 0 1 0-2.357 2.357L24.31 20 13.822 30.488Z" fill="#fff"/>
+								</svg>
+							</div>
+  							<div class="swiper-button-next rules-swiper__button-next">
+								<svg width="40" height="40" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M13.822 30.488a1.667 1.667 0 1 0 2.357 2.357l11.077-11.077a2.5 2.5 0 0 0 0-3.536L16.18 7.155a1.667 1.667 0 1 0-2.357 2.357L24.31 20 13.822 30.488Z" fill="#fff"/>
+								</svg>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="section-gifts">
+					<div class="container">
+						<h2 class="section-title">Привел друга? Получи подарок!</h2>
+						<p class="text-center text-base">Расскажи другу, который тоже создает игровой контент, о нашей гонке и пригласи его поучаствовать! Если он достигнет уровня <a href="#section-stages">«Ученик»</a>  или поднимется выше, ты получишь приятные призы от Дзена</p>
+						<div class="d-none d-lg-flex row">
+							<div class="col-md-4">
+								<div class="gift-box gift-box--bg-tshirt">
+									<div class="gift-box__text text-base">1 друг —<br aria-hidden="true">футболка</div>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="gift-box gift-box--bg-bag">
+									<div class="gift-box__text text-base">2 друга —<br aria-hidden="true">сумка кросс-боди</div>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="gift-box gift-box--bg-hoodie">
+									<div class="gift-box__text text-base">5 друзей —<br aria-hidden="true">худи</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper gifts-swiper" aria-hidden="true">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="gift-box gift-box--bg-tshirt">
+									<div class="gift-box__text text-base">1 друг —<br aria-hidden="true">футболка</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="gift-box gift-box--bg-bag">
+									<div class="gift-box__text text-base">2 друга —<br aria-hidden="true">сумка кросс-боди</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="gift-box gift-box--bg-hoodie">
+									<div class="gift-box__text text-base">5 друзей —<br aria-hidden="true">худи</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="section-faq">
+					<div class="container">
+						<h2 class="section-title">Ответы на вопросы</h2>
+						<div class="faq-item">
+							<div class="faq-spoiler js-spoiler">
+								<div class="faq-spoiler__head" data-spoiler-head>
+									<p>Если у меня уже есть канал в Дзене, я могу участвовать?</p>
+								</div>
+		
+								<div class="faq-spoiler__body" data-spoiler-body>
+									<div class="faq-spoiler__body-inner text-base">
+										<p>GAMERUN –– соревнование для всех авторов, создающих геймерский контент. Мы рады видеть среди участниках как новичков, так и тех, кто уже выкладывает игровой контент в Дзене</p>
+									</div>
+								</div>
+							</div>
+						</div>						
+						<div class="faq-item">
+							<div class="faq-spoiler js-spoiler">
+								<div class="faq-spoiler__head" data-spoiler-head>
+									<p>Как часто обновляются данные в таблице?</p>
+								</div>
+		
+								<div class="faq-spoiler__body" data-spoiler-body>
+									<div class="faq-spoiler__body-inner text-base">
+										<p>Данные по просмотрам собираются постоянно. Количество просмотров в таблице обновляется раз в час</p>
+									</div>
+								</div>
+							</div>
+						</div>						
+						<div class="faq-item">
+							<div class="faq-spoiler js-spoiler">
+								<div class="faq-spoiler__head" data-spoiler-head>
+									<p>Почему я не могу найти себя среди участников?</p>
+								</div>
+		
+								<div class="faq-spoiler__body" data-spoiler-body>
+									<div class="faq-spoiler__body-inner text-base">
+										<p>Новые участники появляются в таблице раз в 2–3 дня. Это занимает чуть больше времени в связи с проверкой каналов на соответствие тематике</p>
+									</div>
+								</div>
+							</div>
+						</div>						
+						<div class="faq-item">
+							<div class="faq-spoiler js-spoiler">
+								<div class="faq-spoiler__head" data-spoiler-head>
+									<p>Как считаются просмотры?</p>
+								</div>
+		
+								<div class="faq-spoiler__body" data-spoiler-body>
+									<div class="faq-spoiler__body-inner text-base">
+										<p>Мы считаем суммарное количество просмотров всех ваших публикаций, созданных в Дзене, с момента старта соревнования GAMERUN и до его завершения – с 21 сентября по 21 октября.</p>
+										<p>Мы учитываем в забеге только реальные просмотры пользователей — всё честно🙂 Поэтому конкурсные публикации проходят несколько этапов алгоритмической проверки антифродом Дзена. По итогам всех проверок подозрительные просмотры не будут учитываться в рейтинге.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="faq-item">
+							<div class="faq-spoiler js-spoiler">
+								<div class="faq-spoiler__head" data-spoiler-head>
+									<p>Что является игровым контентом?</p>
+								</div>
+		
+								<div class="faq-spoiler__body" data-spoiler-body>
+									<div class="faq-spoiler__body-inner text-base">
+										<p>Игровым контентом являются: записи ваших стримов, летсплеи, подборки видео игр, рекомендации, экспертные статьи с разбором новинок, нарезки со стримов, материалы по настольным играм, фото и видео отчеты с игровых мероприятий или конференций и так далее</p>
+									</div>
+								</div>
+							</div>
+						</div>				
+						<div class="faq-item">
+							<div class="faq-spoiler js-spoiler">
+								<div class="faq-spoiler__head" data-spoiler-head>
+									<p>Как работает реферальная программа?</p>
+								</div>
+		
+								<div class="faq-spoiler__body" data-spoiler-body>
+									<div class="faq-spoiler__body-inner text-base">
+										<p>21 октября, в день окончания соревнования, мы зафиксируем количество просмотров всех участников. Если на тот момент приведенные вами друзья достигли уровня «Ученик» или поднялись выше, вы получите приятные призы от Дзена. От 1 до 2 друзей — футболку,  от 3 до 4 — кросс-боди, от 5 и выше — худи</p>
+									</div>
+								</div>
+							</div>
+						</div>				
+						<div class="faq-item">
+							<div class="faq-spoiler js-spoiler">
+								<div class="faq-spoiler__head" data-spoiler-head>
+									<p>Когда я смогу получить свои призы?</p>
+								</div>
+		
+								<div class="faq-spoiler__body" data-spoiler-body>
+									<div class="faq-spoiler__body-inner text-base">
+										<p>Все призы распределяются между участниками по завершении контентной гонки. 21 октября, в день окончания соревнования, мы остановим обновление таблицы результатов. 26 октября — объявим имена победителей на оффлайн мероприятии в Москве! Также подведем итоги для участников реферальной программы</p>
+									</div>
+								</div>
+							</div>
+						</div>				
+						<div class="faq-item">
+							<div class="faq-spoiler js-spoiler">
+								<div class="faq-spoiler__head" data-spoiler-head>
+									<p>Если я поздно присоединился к соревнованию, могу ли я претендовать на призы?</p>
+								</div>
+		
+								<div class="faq-spoiler__body" data-spoiler-body>
+									<div class="faq-spoiler__body-inner text-base">
+										<p>Если вы поздно узнали про контентную гонку –– ничего страшного! Вы всё еще можете заполнить форму и начать публиковать контент. Мы учтем просмотры всех ваших материалов в Дзене, которые были опубликованы со дня начала соревнования GAMERUN </p>
+									</div>
+								</div>
+							</div>
+						</div>				
+					</div>
+				</section>
+			</div>
+
+			<footer class="page-footer">
+				<p class="mb-0">ООО «Дзен Платформа», 0+</p>
+				<a href="/assets/rules_GAMERUN_.pdf" target="_blank">Правила конкурса</a>
+			</footer>
+			<div id="app"></div>
+		</div>
+		<script type="module" src="/main.js"></script>
+	</body>
+</html>

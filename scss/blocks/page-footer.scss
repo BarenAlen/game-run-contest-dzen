@@ -1,0 +1,18 @@
+.page-footer {
+    padding: 3.75rem 0 2rem;
+    text-align: center;
+    font-size: $fsz-base;
+    letter-spacing: -0.16px;
+    color: rgba(255, 255, 255, 0.69);
+    a {
+        color: rgba(255, 255, 255, 0.69);
+        text-decoration: underline;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
+    @include media-breakpoint-up(lg) {
+        padding: 5rem 0 6.25rem;
+    }
+}
